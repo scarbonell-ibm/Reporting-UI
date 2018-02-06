@@ -1,0 +1,5 @@
+---
+applications:
+ - name: JKE Banking Plus
+   random-route: true
+   memory: 256M
