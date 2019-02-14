@@ -1,0 +1,2092 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite tests="0" failures="0" errors="0" name="results"/>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading ReleaseEvent without tags">
+    <testcase name="#1 MongoNetworkError: connection 0 to localhost:27017 timed out">
+      <failure type="error" message="not ok 1 MongoNetworkError: connection 0 to localhost:27017 timed out">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      { name: 'MongoNetworkError', message: 'connection 0 to localhost:27017 timed out' }
+    at: &lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:20:20)
+    stack: |-
+MongoNetworkError: connection 0 to localhost:27017 timed out
+at Socket.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/mongodb-core/lib/connection/connection.js:258:7)
+at Object.onceWrapper (events.js:313:30)
+at emitNone (events.js:106:13)
+at Socket.emit (events.js:208:7)
+at Socket._onTimeout (net.js:422:8)
+at ontimeout (timers.js:498:11)
+at tryOnTimeout (timers.js:323:5)
+at Timer.listOnTimeout (timers.js:290:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading ReleaseEvent with tags">
+    <testcase name="#2 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 2 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:64:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading badly formatted csv">
+    <testcase name="#3 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 3 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:75:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading csv with missing name field">
+    <testcase name="#4 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 4 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:90:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading csv with missing start field">
+    <testcase name="#5 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 5 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:105:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading csv with invalid &quot;start&quot; field">
+    <testcase name="#6 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 6 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:123:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading csv with missing &quot;end&quot; field">
+    <testcase name="#7 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 7 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:141:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading csv with same &quot;start&quot; and &quot;end&quot;  values">
+    <testcase name="#8 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 8 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:159:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading csv with invalid end date field">
+    <testcase name="#9 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 9 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:177:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading csv with missing team field">
+    <testcase name="#10 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 10 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:195:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading csv with no team access">
+    <testcase name="#11 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 11 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:213:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading csv with multiple missing fields">
+    <testcase name="#12 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 12 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:231:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Uploading csv with different time zone">
+    <testcase name="#13 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 13 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:26:12)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:263:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Creating Events">
+    <testcase name="#14 MongoNetworkError: connection 0 to localhost:27017 timed out">
+      <failure type="error" message="not ok 14 MongoNetworkError: connection 0 to localhost:27017 timed out">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      { name: 'MongoNetworkError', message: 'connection 0 to localhost:27017 timed out' }
+    at: &lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:20:20)
+    stack: |-
+MongoNetworkError: connection 0 to localhost:27017 timed out
+at Socket.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/mongodb-core/lib/connection/connection.js:258:7)
+at Object.onceWrapper (events.js:313:30)
+at emitNone (events.js:106:13)
+at Socket.emit (events.js:208:7)
+at Socket._onTimeout (net.js:422:8)
+at ontimeout (timers.js:498:11)
+at tryOnTimeout (timers.js:323:5)
+at Timer.listOnTimeout (timers.js:290:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Reading Events">
+    <testcase name="#15 MongoNetworkError: connection 0 to localhost:27017 timed out">
+      <failure type="error" message="not ok 15 MongoNetworkError: connection 0 to localhost:27017 timed out">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      { name: 'MongoNetworkError', message: 'connection 0 to localhost:27017 timed out' }
+    at: &lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:20:20)
+    stack: |-
+MongoNetworkError: connection 0 to localhost:27017 timed out
+at Socket.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/mongodb-core/lib/connection/connection.js:258:7)
+at Object.onceWrapper (events.js:313:30)
+at emitNone (events.js:106:13)
+at Socket.emit (events.js:208:7)
+at Socket._onTimeout (net.js:422:8)
+at ontimeout (timers.js:498:11)
+at tryOnTimeout (timers.js:323:5)
+at Timer.listOnTimeout (timers.js:290:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="1" failures="1" errors="0" name="Searching Events">
+    <testcase name="#16 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+      <failure type="error" message="not ok 16 TypeError: Attempted to wrap getOrganizationIds which is already wrapped">
+    ---
+    operator: error
+    expected: |-
+      undefined
+    actual: |-
+      [TypeError: Attempted to wrap getOrganizationIds which is already wrapped]
+    at: &lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:20:20)
+    stack: |-
+TypeError: Attempted to wrap getOrganizationIds which is already wrapped
+at checkWrappedMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:39:21)
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:85:13)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/EventTest.js:295:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+--------------
+Error: Stack Trace for original
+at wrapMethod (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/util/core/wrap-method.js:110:26)
+at Object.stub (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/sinon/lib/sinon/stub.js:58:44)
+at Test.&lt;anonymous&gt; (webpack:///tests/func/CsvUploadTests.js:54:1)
+at Test.bound [as _cb] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.run (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/blue-tape/blue-tape.js:13:30)
+at Test.bound [as run] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Immediate.next (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/results.js:71:15)
+at runCallback (timers.js:810:20)
+at tryOnImmediate (timers.js:768:5)
+at processImmediate [as _immediateCallback] (timers.js:745:5)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+  <testsuite tests="71" failures="71" errors="0" name="Clean up EventTest Release Events">
+    <testcase name="#17 test exited without ending">
+      <failure type="fail" message="not ok 17 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#18 test exited without ending">
+      <failure type="fail" message="not ok 18 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#19 test exited without ending">
+      <failure type="fail" message="not ok 19 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#20 test exited without ending">
+      <failure type="fail" message="not ok 20 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#21 test exited without ending">
+      <failure type="fail" message="not ok 21 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#22 test exited without ending">
+      <failure type="fail" message="not ok 22 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#23 test exited without ending">
+      <failure type="fail" message="not ok 23 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#24 test exited without ending">
+      <failure type="fail" message="not ok 24 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#25 test exited without ending">
+      <failure type="fail" message="not ok 25 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#26 test exited without ending">
+      <failure type="fail" message="not ok 26 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#27 test exited without ending">
+      <failure type="fail" message="not ok 27 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#28 test exited without ending">
+      <failure type="fail" message="not ok 28 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#29 test exited without ending">
+      <failure type="fail" message="not ok 29 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#30 test exited without ending">
+      <failure type="fail" message="not ok 30 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#31 test exited without ending">
+      <failure type="fail" message="not ok 31 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#32 test exited without ending">
+      <failure type="fail" message="not ok 32 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#33 test exited without ending">
+      <failure type="fail" message="not ok 33 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#34 test exited without ending">
+      <failure type="fail" message="not ok 34 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#35 test exited without ending">
+      <failure type="fail" message="not ok 35 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#36 test exited without ending">
+      <failure type="fail" message="not ok 36 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#37 test exited without ending">
+      <failure type="fail" message="not ok 37 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#38 test exited without ending">
+      <failure type="fail" message="not ok 38 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#39 test exited without ending">
+      <failure type="fail" message="not ok 39 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#40 test exited without ending">
+      <failure type="fail" message="not ok 40 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#41 test exited without ending">
+      <failure type="fail" message="not ok 41 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#42 test exited without ending">
+      <failure type="fail" message="not ok 42 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#43 test exited without ending">
+      <failure type="fail" message="not ok 43 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#44 test exited without ending">
+      <failure type="fail" message="not ok 44 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#45 test exited without ending">
+      <failure type="fail" message="not ok 45 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#46 test exited without ending">
+      <failure type="fail" message="not ok 46 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#47 test exited without ending">
+      <failure type="fail" message="not ok 47 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#48 test exited without ending">
+      <failure type="fail" message="not ok 48 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#49 test exited without ending">
+      <failure type="fail" message="not ok 49 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#50 test exited without ending">
+      <failure type="fail" message="not ok 50 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#51 test exited without ending">
+      <failure type="fail" message="not ok 51 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#52 test exited without ending">
+      <failure type="fail" message="not ok 52 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#53 test exited without ending">
+      <failure type="fail" message="not ok 53 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#54 test exited without ending">
+      <failure type="fail" message="not ok 54 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#55 test exited without ending">
+      <failure type="fail" message="not ok 55 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#56 test exited without ending">
+      <failure type="fail" message="not ok 56 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#57 test exited without ending">
+      <failure type="fail" message="not ok 57 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#58 test exited without ending">
+      <failure type="fail" message="not ok 58 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#59 test exited without ending">
+      <failure type="fail" message="not ok 59 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#60 test exited without ending">
+      <failure type="fail" message="not ok 60 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#61 test exited without ending">
+      <failure type="fail" message="not ok 61 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#62 test exited without ending">
+      <failure type="fail" message="not ok 62 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#63 test exited without ending">
+      <failure type="fail" message="not ok 63 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#64 test exited without ending">
+      <failure type="fail" message="not ok 64 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#65 test exited without ending">
+      <failure type="fail" message="not ok 65 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#66 test exited without ending">
+      <failure type="fail" message="not ok 66 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#67 test exited without ending">
+      <failure type="fail" message="not ok 67 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#68 test exited without ending">
+      <failure type="fail" message="not ok 68 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#69 test exited without ending">
+      <failure type="fail" message="not ok 69 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#70 test exited without ending">
+      <failure type="fail" message="not ok 70 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#71 test exited without ending">
+      <failure type="fail" message="not ok 71 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#72 test exited without ending">
+      <failure type="fail" message="not ok 72 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#73 test exited without ending">
+      <failure type="fail" message="not ok 73 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#74 test exited without ending">
+      <failure type="fail" message="not ok 74 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#75 test exited without ending">
+      <failure type="fail" message="not ok 75 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#76 test exited without ending">
+      <failure type="fail" message="not ok 76 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#77 test exited without ending">
+      <failure type="fail" message="not ok 77 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#78 test exited without ending">
+      <failure type="fail" message="not ok 78 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#79 test exited without ending">
+      <failure type="fail" message="not ok 79 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#80 test exited without ending">
+      <failure type="fail" message="not ok 80 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#81 test exited without ending">
+      <failure type="fail" message="not ok 81 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#82 test exited without ending">
+      <failure type="fail" message="not ok 82 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#83 test exited without ending">
+      <failure type="fail" message="not ok 83 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#84 test exited without ending">
+      <failure type="fail" message="not ok 84 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#85 test exited without ending">
+      <failure type="fail" message="not ok 85 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#86 test exited without ending">
+      <failure type="fail" message="not ok 86 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+    <testcase name="#87 test exited without ending">
+      <failure type="fail" message="not ok 87 test exited without ending">
+    ---
+    operator: fail
+    at: process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+    stack: |-
+Error: test exited without ending
+at Test.assert [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:225:54)
+at Test.bound [as _assert] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test.fail (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:318:10)
+at Test.bound [as fail] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at Test._exit (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:191:14)
+at Test.bound (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/lib/test.js:77:32)
+at process.&lt;anonymous&gt; (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/tape/index.js:90:19)
+at emitOne (events.js:116:13)
+at process.emit (events.js:211:7)
+at processEmit [as emit] (/Users/rikki.schulte/velocity/ucv-release-events-api/node_modules/nyc/node_modules/signal-exit/index.js:149:35)
+
+    ---
+				</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
