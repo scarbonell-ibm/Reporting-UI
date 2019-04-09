@@ -1,8 +1,9 @@
 IP="10.3.0.117"
+rapid7="https://54.236.84.177:3780"
 echo $IP
 
 result=$(curl -k -X POST \
-  https://54.236.84.177:3780/api/3/assets/search \
+  ${rapid7}/api/3/assets/search \
   -H 'Accept: application/json' \
   -H 'Authorization: Basic U2lkZGhhcnRoX0Nob3VkaGFyeTpTaWRAaGNs' \
   -H 'Content-Type: application/json' \
