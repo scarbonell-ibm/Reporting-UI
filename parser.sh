@@ -13,7 +13,7 @@ result=$(curl -k -X POST \
 	"filters": [{ 
 		"field": "ip-address", 
 		"operator": "is", 
-		"value": "10.3.0.117"
+		"value": ${IP}
 	}],
 	"match": "all"
 }')
