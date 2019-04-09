@@ -5,7 +5,7 @@ result=$(curl -k -X POST \
   ${rapid7}/api/3/assets/search \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
-  -u Siddharth_Choudhary:Sid@hcl
+  -u Siddharth_Choudhary:Sid@hcl \
   -d '{
 	"filters": [{ 
 		"field": "ip-address", 
