@@ -18,3 +18,4 @@ result=$(curl -k -X POST \
 }')
 echo "result"
 echo $result
+echo $result | jq '.resources.[0].riskScore'
