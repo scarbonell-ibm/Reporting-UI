@@ -1,6 +1,5 @@
 IP="10.3.0.117"
 rapid7="https://54.236.84.177:3780"
-echo $IP
 
 result=$(curl -k -X POST \
   ${rapid7}/api/3/assets/search \
@@ -13,7 +12,7 @@ result=$(curl -k -X POST \
 	"filters": [{ 
 		"field": "ip-address", 
 		"operator": "is", 
-		"value": $IP
+		"value": '$IP'
 	}],
 	"match": "all"
 }')
