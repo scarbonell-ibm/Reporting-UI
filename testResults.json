@@ -24,7 +24,7 @@
     {
       "title": "returns status code 200",
       "fullTitle": "Hello World Server GET / returns status code 200",
-      "duration": 202,
+      "duration": 203,
       "currentRetry": 0,
       "err": {}
     }
