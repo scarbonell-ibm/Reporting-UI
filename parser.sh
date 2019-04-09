@@ -3,7 +3,7 @@ rapid7="https://54.236.84.177:3780"
 user=Siddharth_Choudhary
 password=Sid@hcl
 
-result=$(curl -k -X POST \
+result=$(curl -s -k -X POST \
   ${rapid7}/api/3/assets/search \
   -H 'Accept: application/json' \
   -H 'Content-Type: application/json' \
@@ -16,6 +16,4 @@ result=$(curl -k -X POST \
 	}],
 	"match": "all"
 }')
-echo "result"
 echo $result
-echo $result | jq '.resources.[0].riskScore'
