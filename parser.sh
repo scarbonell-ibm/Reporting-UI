@@ -1,7 +1,7 @@
 IP="10.3.0.117"
 echo $IP
 
-result = curl -X POST \
+curl -X POST \
   https://54.236.84.177:3780/api/3/assets/search \
   -H 'Accept: application/json' \
   -H 'Authorization: Basic U2lkZGhhcnRoX0Nob3VkaGFyeTpTaWRAaGNs' \
@@ -16,5 +16,3 @@ result = curl -X POST \
 	}],
 	"match": "all"
 }'
-
-echo $result
