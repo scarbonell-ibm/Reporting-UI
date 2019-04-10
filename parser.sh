@@ -1,4 +1,4 @@
-IP="10.3.0.117"
+IP=$1
 rapid7="https://54.236.84.177:3780"
 user=Siddharth_Choudhary
 password=Sid@hcl
